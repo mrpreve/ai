@@ -7,11 +7,11 @@ import urllib3
 # Suppress only the single warning from urllib3.
 urllib3.disable_warnings(category=urllib3.exceptions.InsecureRequestWarning)
 
-API_KEY = "sk-vtyvGev7fk5oTcEuwF1ha6Q_YKvH8RCysht9cxkDO0T3BlbkFJ7PAiOFKYJCHpaaTMvASXFtC9OPTkVeeM48efx5nmgA"
+API_KEY = ""
 
-client = OpenAI(api_key="sk-vtyvGev7fk5oTcEuwF1ha6Q_YKvH8RCysht9cxkDO0T3BlbkFJ7PAiOFKYJCHpaaTMvASXFtC9OPTkVeeM48efx5nmgA")
+client = OpenAI(api_key="")
 
-OpenAI.api_key = "sk-vtyvGev7fk5oTcEuwF1ha6Q_YKvH8RCysht9cxkDO0T3BlbkFJ7PAiOFKYJCHpaaTMvASXFtC9OPTkVeeM48efx5nmgA"
+OpenAI.api_key = ""
 
 response = client.chat.completions.create(
   model="gpt-4o-mini",
