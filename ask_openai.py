@@ -79,4 +79,4 @@ print(response.json()["choices"][0]["message"]["content"])
 #   max_tokens=300,
 # )
 
-# print(response.choices[0])
+print(response.choices[0])
